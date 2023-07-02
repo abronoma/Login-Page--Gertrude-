@@ -1,0 +1,66 @@
+ <!-- <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type=  "submit" value="Login">Login</button>
+    </form>
+  </div> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="light">
+            <img src="icons8-sun-30.png" alt="dark" class="dark-bolb" onclick="onToggle()">
+            <img src="icons8-dark-24.png" alt="moon" style="background-color: rgb(254, 254, 254);" class="moon">
+        </div>
+        
+        <img src="DIV-LoGo.png" alt="DIV-LoGo" class="DIV-LoGo">
+        <form id="loginForm">
+            <label for="Username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type=  "button" value="Login">Login</button>
+            <button type=  "button" value="Signup">Signup</button>
+
+        </form>
+      </div>
+  </body>
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Get input values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      // Check if username and password are valid
+      if (username === "admin" && password === "password") {
+        alert("Login successful!");
+        // Redirect to dashboard or another page
+      } else {alert("Invalid username or password. Please try again.");
+        // Clear input fields
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+      }
+
+    });
+
+    function onToggle() {
+        var element = document.className='container';
+        element.classList.toggle("dark-mode");
+}
+  </script>
+</body>
+</html>
+  </html>

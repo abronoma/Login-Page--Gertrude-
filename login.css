@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins';font-size: 14px;
+    background-color: #f4f4f4;
+  }
+  
+ 
+
+  .container {
+    width: 300px;
+    height: 480px;
+    margin: 0 auto;
+    /* margin-top: 100px; */
+    background-color: #01406d;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
+  }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  label{
+    margin-left: 22px;
+  }
+  
+  input{
+    width: 240px;
+    height: 12px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #2b5a79;
+    border-radius: 5px;
+    background-color: #2b5a79;
+    margin-left: 30px;
+  }
+  
+  button{
+    width: 100px;
+    padding: 10px;
+    background-color: #16143c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  .DIV-LoGo {
+    height: 100px;
+    width: 250px;
+    margin-left: 30px;
+  }
+
+  .dark-bolb{
+    height: 20px;
+    width: 20px;
+  }
+
+  .moon{
+    height: 20px;
+    width: 20px;
+  }
+
+  .light{
+    margin-left: 250px;
+  }
+
+  button:hover{
+    background-color: #fff;
+    color: #16143c;
+  }
+
+  .dark-mode {
+  background-color: black;
+  color: white;
+}
